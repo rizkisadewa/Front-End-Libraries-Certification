@@ -1,0 +1,54 @@
+<style type='text/sass'>
+  $i: 1;
+  @while $i <= 10{
+    .text-#{$i}{font-size: 5px * $i;}
+    $i: $i + 1;
+  }
+
+
+</style>
+
+<p class="text-1">Hello</p>
+<p class="text-2">Hello</p>
+<p class="text-3">Hello</p>
+<p class="text-4">Hello</p>
+<p class="text-5">Hello</p>
+<p class="text-6">Hello</p>
+<p class="text-7">Hello</p>
+<p class="text-8">Hello</p>
+<p class="text-9">Hello</p>
+<p class="text-10">Hello</p>
+
+<!--
+The @while directive is an option with similar functionality to the JavaScript while loop. It creates CSS rules until a condition is met.
+
+The @for challenge gave an example to create a simple grid system. This can also work with @while.
+
+    $x: 1;
+    @while $x < 13 {
+      .col-#{$x} { width: 100%/12 * $x;}
+      $x: $x + 1;
+    }
+
+First, define a variable $x and set it to 1. Next, use the @while directive to create the grid system while $x is less than 13.
+
+After setting the CSS rule for width, $x is incremented by 1 to avoid an infinite loop.
+
+Use @while to create a series of classes with different font-sizes.
+
+There should be 10 different classes from text-1 to text-10. Then set font-size to 5px multiplied by the current index number. Make sure to avoid an infinite loop!
+
+1. Your code should use the @while directive.
+2. Your code should set an index variable to 1 to start.
+3. Your code should increment the counter variable.
+4. Your .text-1 class should have a font-size of 5px.
+5. Your .text-2 class should have a font-size of 10px.
+6. Your .text-3 class should have a font-size of 15px.
+7. Your .text-4 class should have a font-size of 20px.
+8. Your .text-5 class should have a font-size of 25px.
+9. Your .text-6 class should have a font-size of 30px.
+10. Your .text-7 class should have a font-size of 35px.
+11. Your .text-8 class should have a font-size of 40px.
+12. Your .text-9 class should have a font-size of 45px.
+13. Your .text-10 class should have a font-size of 50px.
+-->
