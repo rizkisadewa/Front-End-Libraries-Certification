@@ -1,0 +1,19 @@
+const action = {
+  type: 'LOGIN'
+}
+// Define an action creator here:
+function actionCreator(action){
+    return action;
+}
+
+/*
+After creating an action, the next step is sending the action to the Redux store so it can update its state.
+In Redux, you define action creators to accomplish this. An action creator is simply a JavaScript function that returns an action.
+In other words, action creators create objects that represent action events.
+
+Define a function named actionCreator() that returns the action object when called.
+
+1. The function actionCreator should exist.
+2. Running the actionCreator function should return the action object.
+3. The returned action should have a key property type with value LOGIN.
+*/
