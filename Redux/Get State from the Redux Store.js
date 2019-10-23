@@ -1,4 +1,4 @@
-const store = Redux.createStore(
+  const store = Redux.createStore(
   (state = 5) => state
 );
 
